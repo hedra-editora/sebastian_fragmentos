@@ -10,6 +10,9 @@ git:
 	git commit -m "mudança pequena"
 	git push
 
+draft:
+	gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH -sOutputFile=LIVRO_DRAFT.pdf LIVRO.pdf
+
 
 calibre:
 	sudo -v && wget -nv -O- https://raw.githubusercontent.com/kovidgoyal/calibre/master/setup/linux-installer.py | sudo python -c "import sys; main=lambda:sys.stderr.write('Download failed\n'); exec(sys.stdin.read()); main()"
