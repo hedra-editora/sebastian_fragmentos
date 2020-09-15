@@ -1,6 +1,6 @@
 \AtBeginDocument{%
 \begingroup\pagestyle{empty}\raggedright\parindent0pt
-\titulagemfront{}
+{\Formular\titulagemfront{}}
 \vfill
 \clearpage
 
@@ -55,9 +55,9 @@ Foi feito o depósito legal.\\\endgroup
 \pagebreak\raggedright
 %% Front ---------------------------------------------------------
 % Titulo
-\titulagem
+{\Formular\titulagem}
 
-{\Large \autor \par\vspace{1.5ex}}
+{\Formular\Large\textbf \autor \par\vspace{1.5ex}}
 \ifdef{\organizador}{{\footnotesize {\organizador} (\textit{organização})} \par}{}
 \ifdef{\introdutor}{{\footnotesize {\introdutor} (\textit{prefácio})} \par}{}
 \ifdef{\tradutor}{{\footnotesize {\tradutor} (\textit{tradução})}\par}{}\vspace{1.5cm}
@@ -70,7 +70,7 @@ Foi feito o depósito legal.\\\endgroup
 %\includegraphics[width=.4\textwidth,trim=0 0 25 0]{logo.jpg}\\\smallskip
 \par\clearpage\endgroup
 % Resumo -------------------------------------------------------
-\begingroup \footnotesize \parindent0pt \parskip 5pt \thispagestyle{empty} \vspace*{.25\textheight}\mbox{} \vfill
+\begingroup \footnotesize \parindent0pt \parskip 5pt \thispagestyle{empty} \vspace*{-.2\textheight}\mbox{} \vfill
 \baselineskip=.92\baselineskip
 \IfFileExists{PRETAS.tex}{\input{PRETAS}}{% 
 \ifdef{\resumo}{\resumo\par}{}
@@ -81,6 +81,16 @@ Foi feito o depósito legal.\\\endgroup
 \thispagestyle{empty} \endgroup
 \ifdefvoid{\sobreautor}{}{\pagebreak\ifodd\thepage\paginabranca\fi}
 % Sumário -------------------------------------------------------
+%\pagebreak
+%\thispagestyle{empty}
+%\movetooddpage
+%\thispagestyle{empty}
+%%\vspace*{1.5cm}
+%%\hspace*{-2.5cm}\includegraphics[width=110mm]{./imgs/logo1.png}
+%\vspace*{-2.15cm}
+%\hspace*{-2.5cm}\includegraphics[width=110mm]{./imgs/logo3.png}
+%
+%\pagebreak
 
 \sumario{}
 %\IfFileExists{INTRO.tex}{\include{INTRO}}
