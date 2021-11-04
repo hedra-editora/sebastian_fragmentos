@@ -15,7 +15,7 @@
 %\linhalayout{preparação}{Jorge Sallum}
 \linha{ilustração©}{\copyrightilustracao}\smallskip
 \linha{título original}{\titulooriginal}
-\linhalayout{título original}{\emph{Fragmente dintr-un carnet găsit}, 1932}
+\linhalayout{título original}{\textit{Fragmente dintr-un carnet găsit}, 1932}
 \linha{edição consultada}{\edicaoconsultada}
 \linha{primeira edição}{\primeiraedicao}
 \linha{agradecimentos}{\agradecimentos}
@@ -28,7 +28,7 @@
 \linha{preparação}{\preparacao}
 \linha{iconografia}{\iconografia}
 %\linha{capa}{\capa}
-\linhalayout{projeto gráfico}{Lucas Kröeff}
+\linhalayout{capa}{Lucas Kröeff}
 \linha{imagem da capa}{\imagemcapa}\smallskip
 \linha{ISBN}{\ISBN}\smallskip
 \begingroup\tiny\smallskip
@@ -56,17 +56,19 @@ Foi feito o depósito legal.\\\endgroup
 %% Front ---------------------------------------------------------
 % Titulo
 {\Formular\titulagem}
-
+\bigskip
 {\Formular\Large\textbf \autor \par\vspace{3.2em}}
 \ifdef{\organizador}{{\footnotesize {\organizador} (\textit{organização})} \par}{}
 \ifdef{\introdutor}{{\footnotesize {\introdutor} (\textit{prefácio})} \par}{}
-\ifdef{\tradutor}{{\footnotesize {\tradutor} (\textit{tradução})}\par}{}\vspace{4em}
+\ifdef{\tradutor}{{\footnotesize {\tradutor} (\textit{tradução})}\par}{}\vspace{1em}
 
 {{\scriptsize{} \ifdef{\numeroedicao}{\numeroedicao}{1}ª edição} \par}
 
 %logos
 \vfill
-\ifdef{\logo}{\IfFileExists{\logo}{\hfill\includegraphics[width=3cm]{./logo.png}\hfill\logoum{}\\ São Paulo\quad2020}}{\includegraphics[width=2.5cm]{./imgs/logo.png}\break{} São Paulo\quad2020}
+\scriptsize
+\noindent
+\ifdef{\logo}{\IfFileExists{\logo}{\hfill\includegraphics[width=2cm]{./logo.png}\hfill\logoum{}\\\smallskip São Paulo\quad2020}}{\includegraphics[width=2cm]{./imgs/logo.png}\\\smallskip São Paulo\quad2020}
 %\includegraphics[width=.4\textwidth,trim=0 0 25 0]{logo.jpg}\\\smallskip
 \par\clearpage\endgroup
 % Resumo -------------------------------------------------------
@@ -110,10 +112,10 @@ Foi feito o depósito legal.\\\endgroup
 
 \mbox{}\vfill\small\thispagestyle{empty}
 \begin{multicols}{2}
-\raggedleft\tiny\noindent{}\emph{Traducerea a fost realizată în cadrul Programului Rezidențele \textsc{filit} pentru traducători 2019, la Brăila.}
+\raggedleft\tiny\noindent{}\textit{Traducerea a fost realizată în cadrul Programului Rezidențele \textsc{filit} pentru traducători 2019, la Brăila.}
 
 
-\raggedright\tiny\noindent{}\emph{A tradução foi realizada no contexto do Programa de Residências \textsc{filit} para Tradutores 2019, em Brăila.}
+\raggedright\tiny\noindent{}\textit{A tradução foi realizada no contexto do Programa de Residências \textsc{filit} para Tradutores 2019, em Brăila.}
 \end{multicols}
 \begin{center}
 \begin{minipage}{.8\textwidth}
